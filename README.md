@@ -1,1 +1,158 @@
-This is my first end to end Data Manipulation process.
+# Mexico Toy Store Sales Analysis
+
+## 📌 Project Overview
+
+This project performs an **end‑to‑end exploratory data analysis (EDA)** on the **Maven Toys Mexico** dataset using **Python** and **pandas**. The goal is to uncover sales patterns, product performance, store‑level insights, and profitability drivers for a toy store chain across Mexico.
+
+The analysis covers:
+- Data cleaning and merging of multiple CSV files
+- Revenue and profit calculations
+- Product‑category and individual product performance
+- Store and city‑level revenue ranking
+- Time series trends (monthly, weekly, and daily)
+- Identification of low‑performing products and stores
+
+> 📓 **Notebook:** `Mexico_toy_store.ipynb`
+
+---
+
+## 📂 Dataset
+
+The data comes from **Maven Toys** and consists of five CSV files:
+
+| File | Description |
+|------|-------------|
+| `sales.csv` | Transaction records (Sale_ID, Date, Store_ID, Product_ID, Units) |
+| `products.csv` | Product details (Product_ID, Name, Category, Cost, Price) |
+| `stores.csv` | Store information (Store_ID, Name, City, Location, Open Date) |
+| `inventory.csv` | Stock‑on‑hand per store per product |
+| `calendar.csv` | Date reference table (not heavily used) |
+| `data_dictionary.csv` | Column definitions |
+
+**Data size:** ~829,000 sales records (2022–2023).
+
+---
+
+## 🔧 Tools & Libraries
+
+- **Python 3.13**
+- **pandas** – data manipulation & aggregation
+- **NumPy** – numerical operations
+- **Matplotlib** – basic visualizations (optional)
+
+All analysis is done in a single Jupyter Notebook.
+
+---
+
+## 📊 Analysis Steps
+
+1. **Data Loading & Inspection**  
+   - Load all CSV files into pandas DataFrames.
+   - Check data types, missing values, and basic info.
+
+2. **Data Cleaning & Merging**  
+   - Merge `sales` with `products` → `sale_prod`
+   - Merge `sale_prod` with `stores` → `toy_sales` (final working DataFrame)
+   - Convert `Date` to datetime.
+   - Remove dollar signs (`$`) from `Product_Price` and `Product_Cost` and convert to float.
+
+3. **Feature Engineering**  
+   - `Revenue = Units * Product_Price`
+   - `Profit = Revenue - Product_Cost`
+
+4. **Product Analysis**  
+   - Total revenue & profit by product category.
+   - Top 10 products by revenue, profit, and units sold.
+   - Profit margin calculation and ranking.
+   - Identification of **low‑sales & high‑price** products.
+
+5. **Store & City Analysis**  
+   - Revenue by store and city.
+   - Group stores into **High / Mid / Low / Lowest** revenue quartiles.
+   - Profit margin by city.
+
+6. **Time Series Analysis**  
+   - Monthly revenue and profit trends.
+   - Week‑over‑week and day‑of‑week performance.
+   - Month‑over‑month percentage change.
+
+7. **Pivot Tables**  
+   - Revenue by store vs product category.
+   - Revenue by month vs product.
+
+---
+
+## 🔍 Key Insights (Executive Summary)
+
+### Overall Performance
+- **Total Revenue:** $14,444,572  
+- **Total Profit:** $6,171,473  
+- **Overall Profit Margin:** ~42.7%
+
+### Product‑Level
+- **Colorbuds** is the star product:  
+  - 104,368 units sold, $1.05M profit, **67% profit margin**  
+  - Contributes **17%** of total profit
+- **Toys** category generates the highest revenue ($5.09M), but **Electronics** has the highest margin (57%).
+- **Four products** (Colorbuds, Lego Bricks, Action Figure, Magic Sand) account for **37%** of total profit.
+- **Low‑sale / high‑price products** (PlayDoh Playset, Plush Pony, Monopoly, Mini Basketball Hoop) need promotional attention.
+
+### Store & City
+- **Ciudad de Mexico** is the top‑performing city:  
+  - $1.65M revenue, $745k profit, 45% margin
+- **Downtown** stores outperform Commercial, Residential, and Airport locations.
+- **Maven Toys Campeche 2** is the lowest‑revenue store ($206k) – requires operational review.
+
+### Time Trends
+- **December 2022** was the best month ($877k revenue, $385k profit).
+- **March 2023** also strong ($883k revenue, $388k profit).
+- **August** is consistently the lowest‑sales month across both years.
+- **Saturdays** and **Fridays** are the best‑performing weekdays.
+
+---
+
+## ▶️ How to Run
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/mexico-toy-store-analysis.git
+   cd mexico-toy-store-analysis
+Install required libraries
+
+bash
+pip install pandas numpy matplotlib
+Place the dataset
+Download the Maven Toys dataset (CSV files) and place them in a folder.
+Update the file paths in the notebook accordingly.
+
+Run the Jupyter Notebook
+
+bash
+jupyter notebook Mexico_toy_store.ipynb
+Or use VS Code / Google Colab.
+
+📁 Repository Structure
+text
+.
+├── Mexico_toy_store.ipynb   # Main analysis notebook
+├── README.md                # This file
+└── data/                    # (optional) folder for CSV files – not included
+Note: The dataset is not included due to size and licensing. You can obtain it from Maven Analytics (free registration).
+
+📌 Recommendations for the Business
+Stock Colorbuds aggressively – it’s the best‑selling and most profitable product.
+
+Promote Electronics (e.g., Gamer Headphones) – they have the highest profit margin.
+
+Investigate why August sales drop every year – plan seasonal promotions.
+
+Support low‑sales cities (La Paz, Cuernavaca, Durango) with local marketing campaigns.
+
+Review operations at Maven Toys Campeche 2 – the lowest‑revenue store.
+
+Consider discounting or bundling low‑sale / high‑price items (PlayDoh Playset, Monopoly).
+
+🙋‍♀️ Author
+Sayahtet – [www.linkedin.com/in/htet-aung-myint-46a4a6313]
+
+This project was completed as part of a personal portfolio to demonstrate data cleaning, aggregation, and business insight generation using pandas.
