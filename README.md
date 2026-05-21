@@ -115,7 +115,7 @@ All analysis is done in a single Jupyter Notebook.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/mexico-toy-store-analysis.git
+   git clone https://github.com/Sayahtet/mexico-toy-store-analysis.git
    cd mexico-toy-store-analysis
 Install required libraries
 
@@ -156,3 +156,24 @@ Consider discounting or bundling low‑sale / high‑price items (PlayDoh Playse
 Sayahtet – [www.linkedin.com/in/htet-aung-myint-46a4a6313]
 
 This project was completed as part of a personal portfolio to demonstrate data cleaning, aggregation, and business insight generation using pandas.
+
+## 📊 Power BI Dashboard – Interactive Version
+
+Due to my **student Power BI account** restrictions, the dashboard cannot be published publicly.  
+However, you can see a full preview below:
+
+![Dashboard Preview]<img width="1445" height="758" alt="Screenshot 2026-05-22 034445" src="https://github.com/user-attachments/assets/e01800db-0d56-4ebe-839d-4a3776641584" />
+<img width="1454" height="786" alt="Screenshot 2026-05-22 034437" src="https://github.com/user-attachments/assets/ec6f63ab-8be2-4fce-ae19-7dbabf5ccd84" />
+<img width="1506" height="947" alt="Screenshot 2026-05-22 034426" src="https://github.com/user-attachments/assets/587f2c04-e621-4def-b07d-c55749eb59ee" />
+<img width="1555" height="827" alt="Screenshot 2026-05-22 034414" src="https://github.com/user-attachments/assets/227500b6-ce56-4346-831f-712aaf139e35" />
+
+
+> 🔍 **What the dashboard shows:**  
+> - Total revenue, profit, and margin by product / city / month  
+> - Top 10 products and bottom 5 stores  
+> - Monthly trend with slicers for category and location  
+
+📄 **Export:** [Download PDF version][My dashboard Mexico.pdf](https://github.com/user-attachments/files/28122894/My.dashboard.Mexico.pdf)
+   
+
+*If you’d like to explore the interactive dashboard, I can share my screen or provide the `.pbix` file on request.*
