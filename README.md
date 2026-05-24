@@ -58,7 +58,7 @@ All analysis is done in a single Jupyter Notebook.
 
 3. **Feature Engineering**  
    - `Revenue = Units * Product_Price`
-   - `Profit = Revenue - Product_Cost`
+   - `Profit = Revenue - Product_Cost * Units`
 
 4. **Product Analysis**  
    - Total revenue & profit by product category.
@@ -86,26 +86,26 @@ All analysis is done in a single Jupyter Notebook.
 
 ### Overall Performance
 - **Total Revenue:** $14,444,572  
-- **Total Profit:** $6,171,473  
-- **Overall Profit Margin:** ~42.7%
+- **Total Profit:** $4014029.0 
+- **Overall Profit Margin:** ~27.79%
 
 ### Product‑Level
 - **Colorbuds** is the star product:  
-  - 104,368 units sold, $1.05M profit, **67% profit margin**  
-  - Contributes **17%** of total profit
-- **Toys** category generates the highest revenue ($5.09M), but **Electronics** has the highest margin (57%).
+  - 104,368 units sold, $1.05M profit, **53% profit margin**  
+  - Contributes **20%** of total profit
+- **Toys** category generates the highest revenue ($5.09M), but **Electronics** has the highest margin (45%).
 - **Four products** (Colorbuds, Lego Bricks, Action Figure, Magic Sand) account for **37%** of total profit.
 - **Low‑sale / high‑price products** (PlayDoh Playset, Plush Pony, Monopoly, Mini Basketball Hoop) need promotional attention.
 
 ### Store & City
 - **Ciudad de Mexico** is the top‑performing city:  
-  - $1.65M revenue, $745k profit, 45% margin
+  - $1.65M revenue, $465k profit, 28% margin
 - **Downtown** stores outperform Commercial, Residential, and Airport locations.
 - **Maven Toys Campeche 2** is the lowest‑revenue store ($206k) – requires operational review.
 
 ### Time Trends
-- **December 2022** was the best month ($877k revenue, $385k profit).
-- **March 2023** also strong ($883k revenue, $388k profit).
+- **December 2022** was the best month ($877k revenue, $246k profit).
+- **March 2023** also strong ($883k revenue, $231k profit).
 - **August** is consistently the lowest‑sales month across both years.
 - **Saturdays** and **Fridays** are the best‑performing weekdays.
 
