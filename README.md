@@ -162,10 +162,11 @@ This project was completed as part of a personal portfolio to demonstrate data c
 Due to my **student Power BI account** restrictions, the dashboard cannot be published publicly.  
 However, you can see a full preview below:
 
-![Dashboard Preview]<img width="1445" height="758" alt="Screenshot 2026-05-22 034445" src="https://github.com/user-attachments/assets/e01800db-0d56-4ebe-839d-4a3776641584" />
-<img width="1454" height="786" alt="Screenshot 2026-05-22 034437" src="https://github.com/user-attachments/assets/ec6f63ab-8be2-4fce-ae19-7dbabf5ccd84" />
-<img width="1506" height="947" alt="Screenshot 2026-05-22 034426" src="https://github.com/user-attachments/assets/587f2c04-e621-4def-b07d-c55749eb59ee" />
-<img width="1555" height="827" alt="Screenshot 2026-05-22 034414" src="https://github.com/user-attachments/assets/227500b6-ce56-4346-831f-712aaf139e35" />
+![Dashboard Preview]<img width="1360" height="670" alt="Screenshot 2026-05-24 155733" src="https://github.com/user-attachments/assets/cc14245b-c156-4957-b805-de45f9c11872" />
+<img width="1445" height="758" alt="Screenshot 2026-05-22 034445" src="https://github.com/user-attachments/assets/a08dc1d5-191b-4d46-a8ea-0fcfe061dcf7" />
+<img width="1454" height="786" alt="Screenshot 2026-05-22 034437" src="https://github.com/user-attachments/assets/26d4296a-4979-4e61-812f-3e37a7662a22" />
+<img width="1555" height="827" alt="Screenshot 2026-05-22 034414" src="https://github.com/user-attachments/assets/b2da315d-c66e-4c83-aa44-eb57de92fba5" />
+
 
 
 > 🔍 **What the dashboard shows:**  
@@ -173,7 +174,8 @@ However, you can see a full preview below:
 > - Top 10 products and bottom 5 stores  
 > - Monthly trend with slicers for category and location  
 
-📄 **Export:** [Download PDF version][My dashboard Mexico.pdf](https://github.com/user-attachments/files/28122894/My.dashboard.Mexico.pdf)
+📄 **Export:** [Download PDF version][My dashboard Mexico.pdf][My dashboard Mexico (1).pdf](https://github.com/user-attachments/files/28190379/My.dashboard.Mexico.1.pdf)
+
    
 
 *If you’d like to explore the interactive dashboard, I can share my screen or provide the `.pbix` file on request.*
